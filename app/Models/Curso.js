@@ -5,7 +5,7 @@ const Model = use("Model");
 
 class Curso extends Model {
   aulas() {
-    return this.hasMany("App/models/Aula");
+    return this.hasMany("App/Models/Aula");
   }
 }
 
