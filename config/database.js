@@ -1,6 +1,7 @@
 "use strict";
 const Url = require("url-parse");
 const CLEARDB_DATABASE_URL = new Url(Env.get("CLEARDB_DATABASE_URL"));
+
 /** @type {import('@adonisjs/framework/src/Env')} */
 const Env = use("Env");
 
