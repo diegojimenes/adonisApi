@@ -19,7 +19,7 @@ const Route = use("Route");
 Route.post("/register", "AuthController.register");
 Route.post("/authenticate", "AuthController.authenticate");
 
-// Route.group(() => {
-Route.resource("aulas", "aulaController").apiOnly();
-Route.resource("cursos", "cursoController").apiOnly();
-// }).middleware("auth");
+Route.group(() => {
+  Route.resource("aulas", "AulaController").apiOnly();
+  Route.resource("cursos", "CursoController").apiOnly();
+}).middleware("auth");
