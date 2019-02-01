@@ -55,10 +55,7 @@ module.exports = {
   mysql: {
     client: "mysql",
     connection: {
-      host: Env.get(
-        "DB_HOST",
-        "postgres://fcrtsbigqrkfvo:2386644aad149cc76332ce457d13333373978746e995a88d0c25f173fd0b8de4@ec2-23-21-86-22.compute-1.amazonaws.com:5432/d1glno3ci87loq"
-      ),
+      host: Env.get("DB_HOST", CLEARDB_DATABASE_URL.host),
       port: Env.get("DB_PORT", ""),
       user: Env.get("DB_USER", CLEARDB_DATABASE_URL.username),
       password: Env.get("DB_PASSWORD", CLEARDB_DATABASE_URL.password),
