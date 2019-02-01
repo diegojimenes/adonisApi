@@ -1,6 +1,6 @@
 "use strict";
 
-const Cursos = use("App/Models/Curso");
+const Cursos = use("App/models/Curso");
 
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
