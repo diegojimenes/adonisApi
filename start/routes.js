@@ -18,6 +18,7 @@ const Route = use("Route");
 
 Route.post("/register", "AuthController.register");
 Route.post("/authenticate", "AuthController.authenticate");
+Route.post("/verificateUser", "AuthController.verificateUser");
 
 Route.group(() => {
   Route.resource("aulas", "AulaController").apiOnly();

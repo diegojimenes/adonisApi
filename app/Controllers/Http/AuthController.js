@@ -17,6 +17,10 @@ class AuthController {
 
     return token;
   }
+
+  async verificateUser({ request, auth }) {
+    return await auth.getUser();
+  }
 }
 
 module.exports = AuthController;
