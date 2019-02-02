@@ -18,7 +18,7 @@ const Route = use("Route");
 
 Route.post("/register", "AuthController.register");
 Route.post("/authenticate", "AuthController.authenticate");
-Route.post("/verificateUser", "AuthController.verificateUser").middleware(
+Route.get("/verificateUser", "AuthController.verificateUser").middleware(
   "auth"
 );
 
